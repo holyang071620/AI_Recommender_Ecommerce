@@ -1,0 +1,15 @@
+# Bytecode & cache
+__pycache__/
+*.py[cod]
+
+# Database files
+*.db
+*.sqlite3
+
+# Environments
+env/
+venv/
+.env
+
+# Logs
+*.log
