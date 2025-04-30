@@ -14,7 +14,12 @@ SECRET_KEY = os.getenv("SECRET_KEY", "fallback-secret-key")
 DEBUG = os.getenv("DEBUG", "False") == "True"
 
 
-ALLOWED_HOSTS = ['ai-recommender-ecommerce-190h.onrender.com']
+import os
+
+ALLOWED_HOSTS = [
+    os.getenv("RENDER_EXTERNAL_HOSTNAME", "localhost")
+]
+
 
 
 # Application definition
